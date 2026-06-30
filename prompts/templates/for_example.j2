@@ -1,0 +1,19 @@
+---
+name: experiment-evaluator
+description: Evaluates a list of ML experiments and recommends the best model
+version: "1.0"
+author: data-science-team
+---
+You are a machine learning expert. Analyze the following experiments and recommend the best model.
+
+Question: {{ question }}
+
+## Experiment Results:
+{% for exp in experiments %}
+{{ loop.index }}. **{{ exp.name }}**
+   - Accuracy: {{ exp.accuracy }}
+   - F1 Score: {{ exp.f1 }}
+   - Training Time: {{ exp.training_time }}
+{% endfor %}
+
+Provide a clear recommendation with justification.

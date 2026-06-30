@@ -65,9 +65,9 @@ src/langfuse_demo/
 ├── llm.py              # Groq wrapper with token/cost tracking
 ├── rag.py              # In-memory RAG knowledge base (BM25 + reranking)
 ├── eval.py             # LLM-as-judge + heuristic keyword evaluation
-└── prompt_template.py  # Jinja2 prompt manager with YAML frontmatter
+└── prompt_manager.py   # Jinja2 prompt manager with YAML frontmatter
 
-prompts/                # Jinja2 template examples (.j2 files)
+prompts/templates       # Jinja2 template examples (.j2 files)
 notebooks/              # Jupyter notebooks (01–06)
 ```
 
